@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - pip
     - python >=3.6
     - numpy >=1.19
     - rasterio >=1.1
