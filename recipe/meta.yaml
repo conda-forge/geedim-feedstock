@@ -1,5 +1,5 @@
 {% set name = "geedim" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geedim-{{ version }}.tar.gz
-  sha256: c546928cdca826d5bfe6fd21084855e6420f122621b3ea4230ae682d37fa6ece
+  sha256: 7ed6f6319be6febc42f064e38e69263354a593ae92d85cf3bd9577a54e1532b1
 
 build:
   entry_points:
@@ -21,7 +21,6 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - pip >=22,<=22.0.4
     - python >=3.6
     - numpy >=1.19
     - rasterio >=1.1

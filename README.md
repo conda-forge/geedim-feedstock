@@ -7,12 +7,13 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geedim-feedstock/blob/main/LICENSE.txt)
 
-Summary: Google Earth Engine image download
+Summary: Search, composite, and download Google Earth Engine imagery.
 
-geedim provides a command line interface and API for searching by date,
-region, and cloud/shadow statistics. It optionally performs cloud/shadow
-masking, and cloud-free compositing. Images and composites (including
-metadata) can be downloaded, or exported to Google Drive.
+`geedim` provides a command line interface and API for searching, compositing and downloading
+satellite imagery from Google Earth Engine (EE).  It optionally performs cloud / shadow
+masking, and cloud / shadow-free compositing on supported collections.  Images and composites
+can be downloaded, or exported to Google Drive.  Images larger than the EE size limit are
+split and downloaded as separate tiles, then re-assembled into a single GeoTIFF.
 
 
 Current build status
