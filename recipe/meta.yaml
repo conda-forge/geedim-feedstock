@@ -1,5 +1,5 @@
 {% set name = "geedim" %}
-{% set version = "1.5.3" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geedim-{{ version }}.tar.gz
-  sha256: 5d8e02ea3e6f771b3de32e3dcf603d01ee7a21eff9c8d36c72b2ad34ea779477
+  sha256: 94588bc213f7c946593d788c7cebb11d28efd3f3d5133d51b397263c583ed495
 
 build:
   entry_points:
