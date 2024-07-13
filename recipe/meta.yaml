@@ -1,5 +1,5 @@
 {% set name = "geedim" %}
-{% set version = "1.8.0" %}
+{% set version = "1.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geedim-{{ version }}.tar.gz
-  sha256: f68fe1b312d0b66719d472c595e566cbe99eaf8d57d0e13ab73247262b696944
+  sha256: 29f026e36a0be2e023950431dff45fef4423f725dc15c81e30c684dc0cad8fba
 
 build:
   entry_points:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy >=1.19
-    - rasterio >=1.1
+    - rasterio >=1.3
     - click >=8
     - tqdm >=4.6
     - earthengine-api >=0.1.2
