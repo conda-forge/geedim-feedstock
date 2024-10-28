@@ -18,26 +18,29 @@ build:
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools
     - pip
-    - python >=3.6
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy >=1.19
-    - rasterio >=1.3
+    - rasterio >=1.3.8
     - click >=8
     - tqdm >=4.6
-    - earthengine-api >=0.1.2
+    - earthengine-api >=0.1.379
     - requests >=2.2
     - tabulate >=0.8
-
 test:
   imports:
     - geedim
   commands:
+    - pip check
     - geedim --help
+  requires:
+    - pip
 
 about:
-  home: https://github.com/dugalh/geedim
+  home: https://github.com/leftfield-geospatial/geedim
   summary: Search, composite, and download Google Earth Engine imagery.
   license: Apache-2.0
   license_file: LICENSE
