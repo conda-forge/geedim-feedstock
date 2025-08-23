@@ -30,8 +30,8 @@ requirements:
     - tqdm >=4.6
     - earthengine-api >=0.1.379
     - tabulate >=0.9
-    - fsspec >= 2025.2
-    - aiohttp >= 3.11
+    - fsspec >=2025.2
+    - aiohttp >=3.11
 test:
   imports:
     - geedim
