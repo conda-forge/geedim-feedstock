@@ -1,14 +1,13 @@
 {% set name = "geedim" %}
-{% set version = "2.0.0" %}
-{% set python_min = "3.11" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geedim-{{ version }}.tar.gz
-  sha256: 58578f57d88082e9882c9f5ccf04060b46b50b2e2cebfb54032aac79bf9cc0d3
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/geedim-{{ version }}.tar.gz
+  sha256: ca1b6560719e239caaa3b1bb4734a7ae8cfeb672102254dbc3a9c641175000a1
 
 build:
   entry_points:
